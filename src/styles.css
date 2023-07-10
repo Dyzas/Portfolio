@@ -1,0 +1,212 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #000046, #1cb5e0);
+  padding: 20px;
+  border: 1px solid #1cb5e0;
+  border-radius: 10px;
+}
+.App h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  color: #d7e0e6;
+}
+.social-button {
+  margin-right: 50px; /* Espacement entre les boutons */
+  font-size: 70px; /* Taille de l'icône */
+}
+.profile-image {
+  width: 50%;
+  height: auto;
+}
+
+.description {
+  margin-top: 20px; /* Espacement supérieur */
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.description h2 {
+  font-size: 45px; /* Taille du titre */
+}
+
+.description p {
+  font-size: 25px; /* Taille du paragraphe */
+  line-height: 1.5; /* Espacement des lignes */
+  font-family: sans-serif;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  background-color: #220869;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #6cb7da;
+}
+.project-item {
+  margin-bottom: 25px;
+}
+
+.project-item h3 {
+  font-size: 25px;
+}
+
+.project-item p {
+  margin-bottom: 10px;
+}
+
+.project-item a {
+  color: #e91e63;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  font-size: 25px;
+}
+
+.experience-item p {
+  margin-bottom: 10px;
+}
+
+.experience-item img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+.chef-experience-image {
+  max-width: 50%; /* Ajustez la taille selon vos besoins */
+  height: auto;
+}
+.chef-experience {
+  background-color: #333;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  font-family: "Playfair Display", serif;
+}
+.chef-experience h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.chef-experience .experience-item {
+  margin-bottom: 20px;
+}
+
+.chef-experience h3 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.chef-experience p {
+  font-size: 21px;
+}
+.web-developer-experience h2 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+.web-developer-experience h3 {
+  text-decoration: underline;
+  font-size: 25px;
+}
+.web-developer-experience p {
+  font-size: 22px;
+}
+.web-developer-experience .experience-item {
+  margin-bottom: 20px;
+}
+
+.web-developer-experience .experience-item h3 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.web-developer-experience {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(8, 104, 4);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+}
+
+.web-developer-experience::before,
+.web-developer-experience::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.web-developer-experience::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 170, 42, 0) 0%,
+    rgba(0, 255, 0, 0.3) 10%,
+    rgba(0, 255, 0, 0.5) 50%,
+    rgba(0, 255, 0, 0.3) 90%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  z-index: 1;
+  animation: pulsate 4s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.web-developer-experience::after {
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.3) 10%,
+    rgba(0, 255, 0, 0.5) 50%,
+    rgba(0, 255, 0, 0.3) 90%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  z-index: 2;
+  animation: scanline 2s infinite linear;
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
